@@ -1,1 +1,1 @@
-open-source group referral mechanism - created by frank for kivo finance
+open-source group referral mechanism - created by frank & connor for kivo finance
