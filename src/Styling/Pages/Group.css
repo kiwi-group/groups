@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 36px; 
+  }
+  
+  .group-profile-picture-wrap {
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .group-profile-picture-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .group-username-text {
+    font-family: "fot-tsukuardgothic-std", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .group-info-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    padding: 16px;
+    height: 100px;
+    background-image: linear-gradient(98deg, #fff 9%, #fafafa 120%), conic-gradient(from 0.27turn, #ffcbcb, #c7f3ff 0.12turn, #ffd7a0 0.22turn, #fff5b2 0.33turn, #f2ffd6 0.5turn, #ccffef 0.55turn, #ffd1d2 0.66turn, #ffd1d1 0.74turn, #ebd5ff 0.9turn, #ffcbcb);
+    background-origin: border-box, border-box;
+    background-clip: padding-box, border-box;
+  }
+  
+  .group-name {
+    font-family: "fot-tsukuardgothic-std", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: -1px;
+    flex-grow: 1;
+    width: 85%;
+    border: none;
+    outline: none;
+    caret-color: #efefef;
+  }
+  
+  .name-button {
+    font-family: "Avenir Next Bold";
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 25px;
+  }
+
+  .save {
+    background-color: #d0ffae;
+}
+
+.edit {
+    background-color: #ffe6ae;
+}
+  
+  .inv-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .num-members, .spots-left, .name-group {
+    font-family: "BalooTammudu2";
+    font-weight: 800;
+    font-size: 16px;
+  }
+  
+  .num-members {
+    color: #53b521;
+  }
+  
+  .name-group {
+    font-family: "BalooTammudu2";
+    color: #ff7b7b;
+  }
+
+.group-kiwi-wrap {
+    width: 300px;
+    height: 300px;
+}
+
+.copy-link-img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.group-link-outer-wrap {
+    display: flex;
+    align-items: flex-start;
+  }
+
+.group-link-wrap {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #CEFFD6;  
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+  
+.group-copy-link-button {
+    background-color: #ceffd6;
+    width: 32px;
+    height: 28px;
+    border-radius: 5px;
+    margin-left: 10px; 
+    margin-right: 10px; 
+    cursor: pointer;
+    border:  #CEFFD6;
+    z-index: 9998;
+}
+
+.group-link-text {
+    opacity: 0.55;
+    font-family: "Avenir Next";
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+    flex-grow: 1; 
+    white-space: nowrap;
+}
+
+.left-arrow-img, .right-arrow-img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.left-arrow, .right-arrow {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.group-welcome {
+    font-family: "BalooTammudu2";
+    font-weight: 800;
+  }
+
+  .group-x-img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.name-and-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: -15px;
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.your-invite {
+    font-family: "BalooTammudu2";
+    font-weight: 800;
+    color: #53b521
+}
+
+.group-owner {
+    font-family: "Avenir Next Bold";
+    font-size: 12px;
+    color: #96C4FF
+}
+
+@media only screen and (min-width: 481px) {
+
+    .name-button {
+        margin-right: 18px;
+    }
+
+    .action-buttons {
+        margin-top: -12px;
+    }
+
+    .left-arrow {
+        margin-right: 10px;
+    }
+
+    .right-arrow {
+        margin-left: 10px;
+    }
+
+    .group-copy-link-button {
+        margin-top: 5px;
+    }
+
+    .group-link-text {
+        margin-top: -24px;
+        margin-left: 48px;
+    }
+
+    .group-link-wrap {
+        height: 40px;
+        margin-bottom: 128px;
+    }
+
+    .group-info-wrap {
+        width: 400px;
+    }
+    
+    .left-arrow, .right-arrow {
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .group-welcome-wrap {
+        white-space: nowrap;
+    }
+
+    .group-welcome {
+        font-size: 20px;
+    }
+
+    .group-x-img-wrap {
+        border: none;
+        outline: none;
+        height: 20px;
+        width: auto;
+        cursor: pointer;
+        background-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .name-button {
+        color: black;
+        width: 50px;
+        height: 25px;
+    }
+
+    .your-invite {
+        font-size: 12px;
+    }
+
+    .group-welcome {
+        line-height: 0em;
+        font-size: 16px;
+    }
+
+    .group-welcome-wrap {
+        width: 250px;
+        white-space: normal;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .left-arrow, .right-arrow {
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .copy-link-img {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+    }
+
+    .group-copy-link-button {
+        height: 30px;
+        width: 30px;
+        margin-top: 5px;
+    }
+
+    .group-link-text {
+        margin-top: -22px;
+        margin-left: 45px;
+        letter-spacing: -0.1em;  
+    }
+
+    .profile-picture-wrap {
+        width: 30px;
+        height: 30px;
+    }
+
+    .info-wrap {
+        width: 250px;
+        height: 70px;
+    }
+
+    .group-name {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .group-link-wrap {
+        height: 45px;
+    }
+
+    .group-kiwi-wrap {
+        margin-top: 12px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .spots-left {
+        font-size: 12px;
+    }
+
+    .group-info-wrap {
+        width: 300px;
+    }
+
+    .num-members {
+        font-size: 12px;
+    }
+
+    .name-group {
+        font-size: 12px;
+    }
+
+    .group-x-img-wrap {
+        border: none;
+        outline: none;
+        height: 20px;
+        width: auto;
+        cursor: pointer;
+        background-color: transparent;
+        margin-left: -80px;
+    }
+}

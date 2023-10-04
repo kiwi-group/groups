@@ -1,0 +1,114 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.Invite-section {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Invite-header, .Invite-sub {
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-style: normal;
+  white-space: nowrap;
+  letter-spacing: 0.001px;
+}
+
+.Invite-header {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.Invite-sub {
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+
+.Invite-link-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 18.2px;
+  border: solid 0.6px #979797;
+  background-image: linear-gradient(100deg, #515151 -13%, #282828 138%);
+  cursor: pointer;
+  margin-bottom: 36px;
+}
+
+.kiwi  {
+  object-fit: contain;
+  height: 70%;
+  width: 100%;
+}
+
+.Invite-logo {
+  object-fit: contain;
+  height: 50%;
+  width: 100%;
+}
+
+.Invite-kiwi-wrap {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 36px;
+}
+
+.group-invite-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "BalooTammudu2";
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 36px;
+}
+
+.group-num-members, .group-invites-label {
+  letter-spacing: -0.6px;
+}
+.group-num-members {
+  color: #53b521;
+  margin-right: 5px;
+}
+
+.group-invites-label {
+  color: #2d324f;
+}
+
+.invite-group-name-wrap {
+  text-align: center;
+  font-family: "fot-tsukubrdgothic-std", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+@media only screen and (min-width: 481px) {
+  .Invite-header {
+      font-size: 28px
+  }
+
+  .Invite-sub {
+      font-size: 18px
+  }    
+}
+
+@media only screen and (max-width: 480px) {
+  .Invite-header {
+      font-size: 20px
+  }
+
+  .Invite-sub {
+      font-size: 12px
+  }    
+
+  .group-invites-label {
+      font-size: 18px;
+  }
+
+}

@@ -1,0 +1,132 @@
+#kyn-mint-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%; 
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.airdrop-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 36px; 
+  }
+
+.airdrop-profile-picture-wrap {
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+.airdrop-profile-picture-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+.airdrop-username-text {
+    font-family: "fot-tsukuardgothic-std", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .airdrop-left-arrow {
+    justify-content: left;
+    display: flex;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.airdrop-left-arrow-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    z-index: 1000;
+}
+
+.submit-wallet-input {
+    border-radius: 10px;
+    border: solid 1px #f2f2f2;
+    background-color: #fff;
+    font-size: 18px;
+    font-family: "fot-tsukuardgothic-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    padding: 8px 24px;
+    /* margin-top: 32px; */
+    
+}
+
+.submit-wallet-input-wrap {
+    font-size: 16px;
+    font-family: 'Avenir Demi Bold';
+    width: 136px; 
+    height: 40px;
+    background-color: blue;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-wallet-button-wrap {
+    margin-top: 32px;
+}
+
+@media screen and (min-width: 481px) {
+
+    .submit-wallet-input {
+        height: 60px;
+    }
+
+    .airdrop-left-arrow {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 120%;
+        left: 32px;
+    }
+
+    .kivo-button {
+        margin-top: 24px;
+        font-size: 16px;
+        font-family: 'Avenir Demi Bold';
+        width: 136px; 
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .submit-wallet-input {
+        height: 60px;
+    }
+
+    .username-wrap {
+        margin-bottom: 20px;
+      }
+
+      .airdrop-left-arrow {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 100%;
+        left: 16px;
+    }
+
+    .kivo-button {
+        margin-top: 24px;
+        font-size: 16px;
+        font-family: 'Avenir Demi Bold';
+        width: 136px; 
+        height: 40px;
+    }
+}

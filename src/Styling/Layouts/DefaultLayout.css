@@ -1,0 +1,74 @@
+.DL-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.DL-top-bar-container {
+    display: flex;
+    height: 48px;
+    padding: 28px 56px 28px 56px;
+    align-items: center;
+}
+
+.DL-logo-image {
+    width: 124px;
+    height: 24px;
+}
+
+.DL-navigation-container {
+    display: flex;
+    gap: 48px;
+    margin-left: 96px;
+}
+
+.text-button {
+    font-size: 16px;
+    font-family: 'Avenir Light';
+}
+
+.DL-top-bar-container > .kivo-button {
+    font-size: 16px;
+    font-family: 'Avenir Demi Bold';
+    width: 136px; 
+    height: 40px;
+    margin-left: auto;
+}
+
+.DL-top-bar-container > #x-logo-button {
+    margin-left: auto;
+}
+
+.DL-x-logo-image {
+    width: 20px;
+    height: 20px;
+}
+
+.DL-footer-container {
+    display: flex;
+    background-color: #f7f7f7;
+    padding: 12px 18px;
+    margin-top: auto;
+}
+
+#x-logo-button {
+    margin-left: auto; 
+}
+
+.DL-kivo-copyright-label {
+    font-size: 14px;
+    font-family: 'Avenir Next Bold';
+    color: #e6e6e6;
+}
+
+@media all and (max-width: 443px) {
+    .DL-top-bar-container {
+        justify-content: center;
+    }
+
+    .DL-footer-container {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Avenir Light';
+    src: url('./Metropolis-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Avenir Demi Bold';
+    src: url('./Metropolis-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Avenir Next Bold';
+    src: url('./Metropolis-Bold.otf') format('opentype');
+}

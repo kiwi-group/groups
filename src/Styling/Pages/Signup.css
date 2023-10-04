@@ -1,0 +1,79 @@
+.X-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%; 
+  overflow: hidden; 
+}
+
+.X-header, .X-sub {
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-style: normal;
+  white-space: nowrap;
+  margin-bottom: 16px;
+}
+
+.X-header {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.X-sub {
+  font-weight: 400;
+}
+
+.X-link-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 18.2px;
+  border: solid 0.6px #979797;
+  background-image: linear-gradient(100deg, #515151 -13%, #282828 138%);
+  cursor: pointer;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.X-logo {
+    object-fit: contain;
+    height: 50%;
+    width: 100%;
+}
+
+.kiwi {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.kiwi-wrap {
+  width: 300px;
+  height: 300px;
+}
+
+.X-upper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 0.2;  
+  margin-top: 5vh;
+}
+
+.X-lower-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: min(64px, max(6vw, 80px));
+}
+
+@media only screen and (max-width: 480px) {
+    .X-header {
+        font-size: 20px
+    }
+
+    .X-sub {
+        font-size: 12px
+    }    
+}

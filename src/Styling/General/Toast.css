@@ -1,0 +1,82 @@
+.toast-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+  }
+
+.toast-container.auto-hide {
+    animation: slideDown 0.5s ease, linger 5s 0.5s, slideUp 0.5s 1.5s;
+    animation-fill-mode: forwards;
+}
+  
+@media all and (min-width: 792px) {  
+  .toast-container {
+    width: 20%;
+  }
+
+  .toast-image {
+    width: 100%
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateX(-50%) translateY(-100%);
+    }
+    100% {
+      transform: translateX(-50%) translateY(20%);
+    }
+  }
+  
+  @keyframes linger {
+    100% {
+      transform: translateX(-50%) translateY(20%);
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateX(-50%) translateY(20%);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-100%);
+    }
+  }
+}
+
+@media all and (max-width: 791px) {
+    .toast-container {
+        width: 50vw;
+        height: auto;
+    }
+
+    .toast-image {
+        width: 100%;
+        height: auto;
+    }
+
+    @keyframes slideDown {
+        0% {
+            transform: translateX(-50%) translateY(-100%);
+        }
+        100% {
+            transform: translateX(-50%) translateY(15%);
+        }
+    }
+    
+    @keyframes linger {
+        100% {
+            transform: translateX(-50%) translateY(15%);
+        }
+    }
+    
+    @keyframes slideUp {
+        0% {
+            transform: translateX(-50%) translateY(15%);
+        }
+        100% {
+            transform: translateX(-50%) translateY(-100%);
+        }
+    }
+}

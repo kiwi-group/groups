@@ -1,0 +1,48 @@
+.kivo-button {
+    border-radius: 9px;
+    border-style: solid;
+    border-width: 2px;
+    border-image-source:
+
+    conic-gradient(
+        from 0.27turn, 
+        #ffcbcb, 
+        #c7f3ff 0.12turn, 
+        #ffd7a0 0.22turn, 
+        #fff5b2 0.33turn, 
+        #f2ffd6 0.5turn, 
+        #ccffef 0.55turn, 
+        #ffd1d2 0.66turn, 
+        #ffd1d1 0.74turn, 
+        #ebd5ff 0.9turn, 
+        #ffcbcb
+    );
+
+    border-image-slice: 1;
+    background-image:
+
+    linear-gradient(
+        98deg, 
+        #fff 9%, 
+        #fafafa 120%
+    ), 
+    conic-gradient(
+        from 0.27turn, 
+        #ffcbcb, 
+        #c7f3ff 0.12turn, 
+        #ffd7a0 0.22turn, 
+        #fff5b2 0.33turn, 
+        #f2ffd6 0.5turn, 
+        #ccffef 0.55turn, 
+        #ffd1d2 0.66turn, 
+        #ffd1d1 0.74turn, 
+        #ebd5ff 0.9turn, 
+        #ffcbcb
+    );
+
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}

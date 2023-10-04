@@ -1,0 +1,214 @@
+.joined-flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.profile-picture-wrap {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-picture-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.username-text {
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.create-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.create-button {
+  outline: none;
+  border: none;
+  background: none;
+  padding: none;
+}
+
+.create-img {
+  height: 100px;
+  width: 400px;
+  object-fit: contain;
+}
+
+.joined-right-arrow {
+  position: absolute;
+  display: flex;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.joined-right-arrow-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.joined-info-wrap {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 16px;
+  
+  background-image: 
+    linear-gradient(98deg, #fff 9%, #fafafa 120%),
+    conic-gradient(
+        from 0.27turn, 
+        #ffcbcb, 
+        #c7f3ff 0.12turn, 
+        #ffd7a0 0.22turn, 
+        #fff5b2 0.33turn, 
+        #f2ffd6 0.5turn, 
+        #ccffef 0.55turn, 
+        #ffd1d2 0.66turn, 
+        #ffd1d1 0.74turn, 
+        #ebd5ff 0.9turn, 
+        #ffcbcb
+    );
+  
+  background-origin: border-box, border-box;
+  background-clip: padding-box, border-box;
+}
+
+.joined-group-name {
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: -10px;
+  flex-grow: 1;
+}
+
+.joined-corner-wrap {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+}
+
+.joined-corner-text, .joined-group-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.joined-corner-text {
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  z-index: 2;
+}
+
+.joined-group-kiwi-wrap {
+  width: 300px;
+  height: 300px;
+}
+
+.welcome {
+  font-family: "BalooTammudu2";
+  font-weight: 800;
+}
+
+.welcome-wrap {
+  margin-top: 16px;
+}
+
+
+@media only screen and (min-width: 481px) {
+
+  .joined-right-arrow {
+      height: 50px;
+      width: 50px;
+      right: -64px;
+  }
+
+  .welcome-wrap {
+      white-space: nowrap;
+  }
+
+  .welcome {
+      font-size: 24px;
+  }
+
+  .joined-group-kiwi-wrap {
+      padding-top: 128px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .joined-group-kiwi-wrap {
+      padding-top: 64px;
+  }
+
+  .welcome-wrap {
+      white-space: normal;
+      display: block;
+      text-align: center;
+  }
+
+  .welcome {
+      font-size: 18px;
+  }
+
+  .profile-picture-wrap {
+      width: 30px;
+      height: 30px;
+  }
+
+  .create-wrap {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+  }
+  
+  .create-button {
+      outline: none;
+      border: none;
+      background: none;
+      padding: none;
+  }
+  
+  .create-img {
+      height: 100px;
+      width: 200px;
+      object-fit: contain;
+  }
+
+  .joined-info-wrap {
+      width: 250px;
+      height: 70px;
+      margin-bottom: 10px;
+  }
+
+  .joined-group-name {
+      font-size: 24px;
+  }
+
+  .username-wrap {
+      margin-bottom: 20px;
+    }
+
+  .joined-right-arrow {
+  height: 30px;
+  width: 30px;
+  right: -44px;
+  }
+}
